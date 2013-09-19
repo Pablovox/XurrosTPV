@@ -53,6 +53,7 @@ public class JTicketsBagRestaurant extends javax.swing.JPanel {
         m_jDelTicket = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
@@ -91,6 +92,18 @@ public class JTicketsBagRestaurant extends javax.swing.JPanel {
             }
         });
         add(jButton1);
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/reload.png"))); // NOI18N
+        jButton3.setFocusPainted(false);
+        jButton3.setFocusable(false);
+        jButton3.setMargin(new java.awt.Insets(8, 14, 8, 14));
+        jButton3.setRequestFocusEnabled(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        add(jButton3);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -113,11 +126,16 @@ public class JTicketsBagRestaurant extends javax.swing.JPanel {
         m_restaurant.newTicket();
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton m_jDelTicket;
     // End of variables declaration//GEN-END:variables
     
